@@ -1,111 +1,162 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaxuan (Stella) Mao | HCI Researcher</title>
+    <title>YAXUAN (STELLA) MAO - HCI Researcher</title>
     <style>
+        /* --- 全局设置 --- */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6; /* 整体背景灰白色 */
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fafafa;
         }
-        a { color: #0066cc; text-decoration: none; }
+        a { color: #0056b3; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        
-        /* --- 头部信息 --- */
-        header { text-align: center; margin-bottom: 60px; }
+
+        /* --- 顶部导航栏 --- */
+        header {
+            background-color: #b0c4de; /* 模版中的淡蓝色背景 */
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .site-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        /* 这里加个小logo占位符，你可以稍后替换 */
+        .site-logo { height: 30px; margin-right: 10px; } 
+
+        nav a {
+            margin-left: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        nav a.active { color: #fff; } /* 当前页面高亮 */
+
+        /* --- 主体布局 (两栏结构) --- */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: flex;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* --- 左侧边栏 --- */
+        .sidebar {
+            flex: 1;
+            max-width: 250px;
+            text-align: left;
+        }
         .avatar {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-bottom: 20px;
-            border: 1px solid #ddd;
-            background-color: #eee; /* 暂时没有图片时的占位色 */
         }
-        h1 { margin: 0; font-size: 2.5em; letter-spacing: -0.5px; }
-        .subtitle { color: #666; font-size: 1.1em; margin-top: 10px; }
-        .social-links { margin-top: 15px; }
-        .social-links a { margin: 0 10px; color: #555; font-weight: bold; }
+        .sidebar-section {
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        .sidebar-section h3 {
+            font-size: 1.1em;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .sidebar-section p { margin: 10px 0; }
 
-        /* --- 章节通用 --- */
-        section { margin-bottom: 50px; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        h2 { border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; margin-top: 0; font-size: 1.5em; }
+        /* --- 右侧主要内容框 --- */
+        .main-content {
+            flex: 3;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .main-content h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .intro-text {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #444;
+        }
+        .highlight { font-weight: bold; color: #000; }
 
-        /* --- 论文列表样式 --- */
-        .paper-item { margin-bottom: 20px; }
-        .paper-title { font-weight: bold; font-size: 1.1em; display: block; }
-        .paper-conf { color: #d9534f; font-weight: bold; font-size: 0.9em; margin-left: 5px; }
-        .paper-authors { color: #666; font-size: 0.95em; }
-
-        /* --- 简单的自适应 --- */
-        @media (max-width: 600px) {
-            body { padding: 20px; }
-            h1 { font-size: 2em; }
+        /* --- 手机端适配 --- */
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            .sidebar { max-width: 100%; text-align: center; }
+            header { flex-direction: column; text-align: center; }
+            nav { margin-top: 20px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar">
-        <h1>Stella Mao</h1>
-        <p class="subtitle">HCI Researcher & University Student</p>
-        <p style="max-width: 600px; margin: 10px auto; color: #777;">
-            这里写一句话介绍。例如：Focusing on Explainable AI (XAI) and Trust in Decision-Making.
-        </p>
-        <div class="social-links">
-            <a href="#">Google Scholar</a>
-            <a href="#">Twitter/X</a>
-            <a href="#">Email</a>
-            <a href="#">CV</a>
+        <div class="site-title">
+            YAXUAN (STELLA) MAO
         </div>
+        <nav>
+            <a href="#" class="active">About</a>
+            <a href="#">Publications</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Misc.</a>
+        </nav>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            你好！我是 Stella。我是一名专注于人机交互（HCI）的研究者。
-            我的研究兴趣主要集中在 <strong>Explainable AI (XAI)</strong> 以及用户在使用 AI 系统时的 <strong>信任建立机制 (Trust Calibration)</strong>。
-        </p>
-        <p>
-            目前我正在研究 Visual vs. Textual Explanation 对用户决策行为的影响。
-        </p>
-    </section>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="avatar.jpg" alt="Stella Mao" class="avatar">
+            
+            <div class="sidebar-section">
+                <p><a href="mailto:stellamaoyaxuan@gmail.com">stellamaoyaxuan@gmail.com</a></p>
+            </div>
 
-    <section>
-        <h2>Publications</h2>
-        
-        <div class="paper-item">
-            <a href="#" class="paper-title">Visual vs. Textual XAI: The Impact of Explanation Modality</a>
-            <span class="paper-authors"><strong>Stella Mao</strong>, Co-author Name, Advisor Name</span>
-            <br>
-            <span class="paper-conf">In Submission / CHI 202X</span>
-            | <a href="#">[PDF]</a> <a href="#">[Demo]</a>
-        </div>
+            <div class="sidebar-section">
+                <h3>Education:</h3>
+                <p>
+                    <a href="https://www.cityu.edu.hk/" target="_blank">B.Sc. in Creative Media - City University of Hong Kong</a>
+                </p>
+                <p>
+                    <a href="https://www.hcde.washington.edu/" target="_blank">M.S. in Human-Centered Design & Engineering - University of Washington</a>
+                </p>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3><a href="resume.pdf" target="_blank">[Resume]</a></h3>
+            </div>
+        </aside>
 
-        <div class="paper-item">
-            <a href="#" class="paper-title">Another Interesting HCI Paper Title Here</a>
-            <span class="paper-authors">Co-author Name, <strong>Stella Mao</strong></span>
-            <br>
-            <span class="paper-conf">CSCW 202X Poster</span>
-            | <a href="#">[PDF]</a>
-        </div>
-    </section>
+        <main class="main-content">
+            <h1>About me</h1>
+            <div class="intro-text">
+                <p>I’m a Master’s student in Human Centered Design & Engineering at the University of Washington, specializing in <span class="highlight">User Experience Research and Human-Robot Interaction (HRI)</span>. My passion is to bridge <span class="highlight">research, design, and engineering</span> to create data-informed, user-centered solutions that enhance usability, trust, and engagement.</p> 
+                
+                <p>I focus on how <span class="highlight">design decisions and ethical frameworks</span> shape human interaction with intelligent systems, and how <span class="highlight">insight-driven research</span> can guide scalable, responsible innovation in AI and robotics. My goal is to build products and experiences that are not only efficient—but also emotionally meaningful and socially responsible.</p>
 
-    <section>
-        <h2>Projects</h2>
-        <p>这里可以放你的课程设计、Hackathon 或者 Side Projects。</p>
-        <ul>
-            <li><strong>Project A:</strong> 一个帮助老年人使用智能手机的 App 设计。</li>
-            <li><strong>Project B:</strong> 基于 Python 的数据可视化分析工具。</li>
-        </ul>
-    </section>
+                <p style="font-style: italic; margin-top: 30px; color: #666;">
+                    In the <a href="#">Misc.</a> section, you'll find some of my coding projects and additional information about me. Feel free to explore if you have the time!
+                </p>
+            </div>
+        </main>
+    </div>
 
 </body>
 </html>
