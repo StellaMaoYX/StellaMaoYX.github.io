@@ -1,22 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Stella's Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaxuan (Stella) Mao | HCI Researcher</title>
     <style>
         body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f0f0f0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fafafa;
         }
-        h1 { color: #333; }
-        p { color: #666; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        /* --- 头部信息 --- */
+        header { text-align: center; margin-bottom: 60px; }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            background-color: #eee; /* 暂时没有图片时的占位色 */
+        }
+        h1 { margin: 0; font-size: 2.5em; letter-spacing: -0.5px; }
+        .subtitle { color: #666; font-size: 1.1em; margin-top: 10px; }
+        .social-links { margin-top: 15px; }
+        .social-links a { margin: 0 10px; color: #555; font-weight: bold; }
+
+        /* --- 章节通用 --- */
+        section { margin-bottom: 50px; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        h2 { border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; margin-top: 0; font-size: 1.5em; }
+
+        /* --- 论文列表样式 --- */
+        .paper-item { margin-bottom: 20px; }
+        .paper-title { font-weight: bold; font-size: 1.1em; display: block; }
+        .paper-conf { color: #d9534f; font-weight: bold; font-size: 0.9em; margin-left: 5px; }
+        .paper-authors { color: #666; font-size: 0.95em; }
+
+        /* --- 简单的自适应 --- */
+        @media (max-width: 600px) {
+            body { padding: 20px; }
+            h1 { font-size: 2em; }
+        }
     </style>
 </head>
 <body>
-    <h1>Hello, world！</h1>
-    <p>This is my first GitHub Pages personal website.</p>
-    <p>Biulding...</p>
+
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar">
+        <h1>Stella Mao</h1>
+        <p class="subtitle">HCI Researcher & University Student</p>
+        <p style="max-width: 600px; margin: 10px auto; color: #777;">
+            这里写一句话介绍。例如：Focusing on Explainable AI (XAI) and Trust in Decision-Making.
+        </p>
+        <div class="social-links">
+            <a href="#">Google Scholar</a>
+            <a href="#">Twitter/X</a>
+            <a href="#">Email</a>
+            <a href="#">CV</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            你好！我是 Stella。我是一名专注于人机交互（HCI）的研究者。
+            我的研究兴趣主要集中在 <strong>Explainable AI (XAI)</strong> 以及用户在使用 AI 系统时的 <strong>信任建立机制 (Trust Calibration)</strong>。
+        </p>
+        <p>
+            目前我正在研究 Visual vs. Textual Explanation 对用户决策行为的影响。
+        </p>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        
+        <div class="paper-item">
+            <a href="#" class="paper-title">Visual vs. Textual XAI: The Impact of Explanation Modality</a>
+            <span class="paper-authors"><strong>Stella Mao</strong>, Co-author Name, Advisor Name</span>
+            <br>
+            <span class="paper-conf">In Submission / CHI 202X</span>
+            | <a href="#">[PDF]</a> <a href="#">[Demo]</a>
+        </div>
+
+        <div class="paper-item">
+            <a href="#" class="paper-title">Another Interesting HCI Paper Title Here</a>
+            <span class="paper-authors">Co-author Name, <strong>Stella Mao</strong></span>
+            <br>
+            <span class="paper-conf">CSCW 202X Poster</span>
+            | <a href="#">[PDF]</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <p>这里可以放你的课程设计、Hackathon 或者 Side Projects。</p>
+        <ul>
+            <li><strong>Project A:</strong> 一个帮助老年人使用智能手机的 App 设计。</li>
+            <li><strong>Project B:</strong> 基于 Python 的数据可视化分析工具。</li>
+        </ul>
+    </section>
+
 </body>
 </html>
