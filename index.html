@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YAXUAN (STELLA) MAO - HCI Researcher</title>
     <style>
-        /* --- 全局设置 --- */
+        /* --- global settings --- */
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f7f6; /* 整体背景灰白色 */
+            background-color: #f4f7f6;
             color: #333;
         }
         a { color: #0056b3; text-decoration: none; }
         a:hover { text-decoration: underline; }
 
-        /* --- 顶部导航栏 --- */
+        /* --- top navigation bar --- */
         header {
-            background-color: #b0c4de; /* 模版中的淡蓝色背景 */
+            background-color: #b0c4de;
             padding: 20px 40px;
             display: flex;
             justify-content: space-between;
@@ -39,7 +39,7 @@
             color: #2c3e50;
             font-size: 1.1em;
         }
-        nav a.active { color: #fff; } /* 当前页面高亮 */
+        nav a.active { color: #fff; } /* high-light */
 
         /* --- 主体布局 (两栏结构) --- */
         .container {
@@ -50,7 +50,7 @@
             padding: 0 20px;
         }
 
-        /* --- 左侧边栏 --- */
+        /* --- left bar --- */
         .sidebar {
             flex: 1;
             max-width: 250px;
@@ -78,7 +78,7 @@
         }
         .sidebar-section p { margin: 10px 0; }
 
-        /* --- 右侧主要内容框 --- */
+        /* --- right main part --- */
         .main-content {
             flex: 3;
             background: white;
@@ -98,7 +98,7 @@
         }
         .highlight { font-weight: bold; color: #000; }
 
-        /* --- 手机端适配 --- */
+        /* --- mobile setting --- */
         @media (max-width: 768px) {
             .container { flex-direction: column; }
             .sidebar { max-width: 100%; text-align: center; }
@@ -123,7 +123,7 @@
 
     <div class="container">
         <aside class="sidebar">
-            <img src="avatar.jpg" alt="Stella Mao" class="avatar">
+            <img src="avatar.jpg" alt="Stella personal portrait" class="avatar">
             
             <div class="sidebar-section">
                 <p><a href="mailto:stellamaoyaxuan@gmail.com">stellamaoyaxuan@gmail.com</a></p>
@@ -142,6 +142,11 @@
             <div class="sidebar-section">
                 <h3><a href="resume.pdf" target="_blank">[Resume]</a></h3>
             </div>
+
+            <div class="sidebar-section">
+                <h3><a href="CV.pdf" target="_blank">[CV]</a></h3>
+            </div>
+            
         </aside>
 
         <main class="main-content">
