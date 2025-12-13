@@ -219,3 +219,20 @@ nav a.active {
         aspect-ratio: 16/9;
     }
 }
+
+.link-row{
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.link-row .dot{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.8;
+}
+
+.link-row .dot{ transform: translateX(-5px); }
