@@ -37,7 +37,7 @@ const headerHTML = `
     </div>
     <nav>
         <a href="index.html" id="link-index">About</a>
-        <a href="publications.html" id="link-publications">Publications</a>
+        <a href="publication.html" id="link-publications">Publications</a>
         <a href="portfolio.html" id="link-portfolio">Portfolio</a>
         <a href="misc.html" id="link-misc">Misc.</a>
     </nav>
