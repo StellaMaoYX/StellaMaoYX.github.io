@@ -225,8 +225,8 @@ body {
   min-height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 img {
@@ -2193,7 +2193,7 @@ figcaption {
   color: #aaa;
   text-align: center;
   margin-top: 5px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .button {
@@ -2205,8 +2205,8 @@ figcaption {
   margin-bottom: 20px;
   margin-left: 20px;
   padding: 11px 20px;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
   text-decoration: none;
   transition: background-color .2s;
   display: inline-block;
@@ -2224,7 +2224,7 @@ figcaption {
   color: #fff;
   margin-left: 25px;
   padding: 15px 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -2418,8 +2418,8 @@ figcaption {
 
 .post-summary {
   color: #aaa;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   display: inline;
 }
 
@@ -2506,7 +2506,7 @@ figcaption {
   color: #aaa;
   margin-left: 8px;
   font-family: Lato, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22%;
   text-decoration: underline;
   transition: color .2s;
@@ -2550,7 +2550,7 @@ figcaption {
   text-align: left;
   margin-top: 0;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 135%;
 }
 
@@ -2648,7 +2648,7 @@ figcaption {
   color: #aaa;
   margin-top: 15px;
   margin-bottom: 0;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 180%;
 }
 
@@ -2689,7 +2689,7 @@ figcaption {
 
 .text-block-4 {
   color: #aaa;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .heading-4 {
@@ -2700,7 +2700,7 @@ figcaption {
 
 .text-block-5 {
   color: #aaa;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .column {
@@ -2795,13 +2795,13 @@ figcaption {
 }
 
 .paragraph-3 {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .paragraph-4 {
   color: var(--dim-gray-3);
   margin-bottom: 25px;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .image-9 {
