@@ -3343,6 +3343,8 @@ figcaption {
 
 .main-container {
   max-width: 90%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .paragraph-41 {
