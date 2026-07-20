@@ -2534,6 +2534,8 @@ figcaption {
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 0 0 1px #0000000f;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 .circle-profile {
@@ -3376,6 +3378,7 @@ figcaption {
 @media screen and (max-width: 991px) {
   .navigation-link {
     text-align: center;
+    color: #333;
   }
 
   .navigation-bar {
