@@ -3383,6 +3383,7 @@ figcaption {
 
   .navigation-link:hover {
     color: var(--webstylelightblue);
+    background-color: #fff;
   }
 
   .navigation-bar {
