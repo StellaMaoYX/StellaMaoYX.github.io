@@ -2392,7 +2392,7 @@ figcaption {
 .post-wrapper {
   background-color: #fff;
   border-radius: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   box-shadow: 0 0 0 1px #0000000f;
 }
 
@@ -2413,7 +2413,7 @@ figcaption {
 }
 
 .post-content {
-  padding: 36px;
+  padding: 52px;
 }
 
 .post-summary {
@@ -2452,12 +2452,12 @@ figcaption {
 }
 
 .body-copy {
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 
 .body-copy p {
-  margin-top: 24px;
-  margin-bottom: 12px;
+  margin-top: 28px;
+  margin-bottom: 14px;
   overflow: visible;
 }
 
@@ -2518,8 +2518,8 @@ figcaption {
 }
 
 .content-wrapper {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .blog-title {
@@ -2533,7 +2533,7 @@ figcaption {
   color: #b6cbe0;
   background-color: #fff;
   border-radius: 5px;
-  padding: 28px;
+  padding: 36px 28px;
   box-shadow: 0 0 0 1px #0000000f;
   overflow-wrap: break-word;
   word-break: break-all;
