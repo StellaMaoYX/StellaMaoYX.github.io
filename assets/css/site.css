@@ -2614,6 +2614,12 @@ figcaption {
   font-style: normal;
 }
 
+.news-block {
+  color: var(--steel-blue-2);
+  margin-top: 8px;
+  font-size: 12px;
+}
+
 .text-block-2 {
   color: #2e80b6;
 }
