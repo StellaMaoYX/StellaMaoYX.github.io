@@ -3378,7 +3378,11 @@ figcaption {
 @media screen and (max-width: 991px) {
   .navigation-link {
     text-align: center;
-    color: #333;
+    color: #fff;
+  }
+
+  .navigation-link:hover {
+    color: var(--webstylelightblue);
   }
 
   .navigation-bar {
@@ -3387,8 +3391,8 @@ figcaption {
   }
 
   .navigation-menu {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: #888;
+    border-bottom: 1px solid #777;
   }
 
   .site-name {
