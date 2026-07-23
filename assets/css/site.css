@@ -3387,7 +3387,11 @@ figcaption {
 @media screen and (max-width: 991px) {
   .navigation-link {
     text-align: center;
-    color: #fff;
+    color: #333;
+  }
+
+  .navigation-link.w--current {
+    background-color: #fff;
   }
 
   .navigation-link:hover {
@@ -3418,7 +3422,14 @@ figcaption {
   }
 
   .content-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 20px;
+  }
+
+  .main-container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .white-wrapper {
@@ -3478,8 +3489,15 @@ figcaption {
 
   .content-wrapper {
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 0;
     padding: 20px 10px;
+  }
+
+  .main-container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .blog-title {
