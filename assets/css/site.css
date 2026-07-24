@@ -3460,6 +3460,43 @@ figcaption {
     padding-right: 10px;
   }
 
+  .w-nav-brand {
+    display: flex;
+    align-items: center;
+    max-width: calc(100% - 60px);
+  }
+
+  .columns-4.w-row {
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+
+  .columns-4 .w-col-2 {
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  .columns-4 .w-col-10 {
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .image-3 {
+    width: 40px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .site-name {
+    margin: 0 0 0 10px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .grey-rule {
     margin-top: 21px;
     margin-bottom: 21px;
@@ -3492,12 +3529,17 @@ figcaption {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 0;
-    padding: 20px 10px;
+    padding: 20px 6px;
   }
 
   .main-container {
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 96%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .content-column {
+    padding-left: 5px;
   }
 
   .blog-title {
