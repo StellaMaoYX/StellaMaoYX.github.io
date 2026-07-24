@@ -1,3 +1,8 @@
+/*
+  基本重置与 HTML5 默认元素样式。
+  这个区块用于标准化不同浏览器的默认表现，
+  包括 html、body、article、section、nav 以及表单控件等基础元素。
+*/
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -168,6 +173,10 @@ td, th {
   padding: 0;
 }
 
+/*
+  Webflow 图标字体嵌入定义。
+  通过 base64 编码的字体文件，为 .w-icon-* 图标类提供矢量图标支持。
+*/
 @font-face {
   font-family: webflow-icons;
   src: url("data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBiUAAAC8AAAAYGNtYXDpP+a4AAABHAAAAFxnYXNwAAAAEAAAAXgAAAAIZ2x5ZmhS2XEAAAGAAAADHGhlYWQTFw3HAAAEnAAAADZoaGVhCXYFgQAABNQAAAAkaG10eCe4A1oAAAT4AAAAMGxvY2EDtALGAAAFKAAAABptYXhwABAAPgAABUQAAAAgbmFtZSoCsMsAAAVkAAABznBvc3QAAwAAAAAHNAAAACAAAwP4AZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADpAwPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAQAAAAAwACAACAAQAAQAg5gPpA//9//8AAAAAACDmAOkA//3//wAB/+MaBBcIAAMAAQAAAAAAAAAAAAAAAAABAAH//wAPAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEBIAAAAyADgAAFAAAJAQcJARcDIP5AQAGA/oBAAcABwED+gP6AQAABAOAAAALgA4AABQAAEwEXCQEH4AHAQP6AAYBAAcABwED+gP6AQAAAAwDAAOADQALAAA8AHwAvAAABISIGHQEUFjMhMjY9ATQmByEiBh0BFBYzITI2PQE0JgchIgYdARQWMyEyNj0BNCYDIP3ADRMTDQJADRMTDf3ADRMTDQJADRMTDf3ADRMTDQJADRMTAsATDSANExMNIA0TwBMNIA0TEw0gDRPAEw0gDRMTDSANEwAAAAABAJ0AtAOBApUABQAACQIHCQEDJP7r/upcAXEBcgKU/usBFVz+fAGEAAAAAAL//f+9BAMDwwAEAAkAABcBJwEXAwE3AQdpA5ps/GZsbAOabPxmbEMDmmz8ZmwDmvxmbAOabAAAAgAA/8AEAAPAAB0AOwAABSInLgEnJjU0Nz4BNzYzMTIXHgEXFhUUBw4BBwYjNTI3PgE3NjU0Jy4BJyYjMSIHDgEHBhUUFx4BFxYzAgBqXV6LKCgoKIteXWpqXV6LKCgoKIteXWpVSktvICEhIG9LSlVVSktvICEhIG9LSlVAKCiLXl1qal1eiygoKCiLXl1qal1eiygoZiEgb0tKVVVKS28gISEgb0tKVVVKS28gIQABAAABwAIAA8AAEgAAEzQ3PgE3NjMxFSIHDgEHBhUxIwAoKIteXWpVSktvICFmAcBqXV6LKChmISBvS0pVAAAAAgAA/8AFtgPAADIAOgAAARYXHgEXFhUUBw4BBwYHIxUhIicuAScmNTQ3PgE3NjMxOAExNDc+ATc2MzIXHgEXFhcVATMJATMVMzUEjD83NlAXFxYXTjU1PQL8kz01Nk8XFxcXTzY1PSIjd1BQWlJJSXInJw3+mdv+2/7c25MCUQYcHFg5OUA/ODlXHBwIAhcXTzY1PTw1Nk8XF1tQUHcjIhwcYUNDTgL+3QFt/pOTkwABAAAAAQAAmM7nP18PPPUACwQAAAAAANciZKUAAAAA1yJkpf/9/70FtgPDAAAACAACAAAAAAAAAAEAAAPA/8AAAAW3//3//QW2AAEAAAAAAAAAAAAAAAAAAAAMBAAAAAAAAAAAAAAAAgAAAAQAASAEAADgBAAAwAQAAJ0EAP/9BAAAAAQAAAAFtwAAAAAAAAAKABQAHgAyAEYAjACiAL4BFgE2AY4AAAABAAAADAA8AAMAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADQAAAAEAAAAAAAIABwCWAAEAAAAAAAMADQBIAAEAAAAAAAQADQCrAAEAAAAAAAUACwAnAAEAAAAAAAYADQBvAAEAAAAAAAoAGgDSAAMAAQQJAAEAGgANAAMAAQQJAAIADgCdAAMAAQQJAAMAGgBVAAMAAQQJAAQAGgC4AAMAAQQJAAUAFgAyAAMAAQQJAAYAGgB8AAMAAQQJAAoANADsd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzUmVndWxhcgBSAGUAZwB1AGwAYQByd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==") format("truetype");
@@ -175,6 +184,10 @@ td, th {
   font-style: normal;
 }
 
+/*
+  Webflow 图标类基础样式。
+  设置图标字体显示方式、抗锯齿和字体替换，确保图标在各浏览器中一致渲染。
+*/
 [class^="w-icon-"], [class*=" w-icon-"] {
   speak: none;
   font-variant: normal;
@@ -211,6 +224,10 @@ td, th {
   content: "";
 }
 
+/*
+  全局盒模型设置。
+  把所有元素的 box-sizing 设为 border-box，方便宽度计算和响应式布局。
+*/
 * {
   box-sizing: border-box;
 }
@@ -219,6 +236,10 @@ html {
   height: 100%;
 }
 
+/*
+  页面基础排版与背景样式。
+  定义页面默认文字颜色、背景色、字体、行高以及最小高度。
+*/
 body {
   color: #333;
   background-color: #fff;
@@ -239,6 +260,10 @@ html.w-mod-touch * {
   background-attachment: scroll !important;
 }
 
+/*
+  Webflow 布局辅助类与清除浮动。
+  包含块级、内联块、清除浮动、隐藏等通用工具类。
+*/
 .w-block {
   display: block;
 }
@@ -789,6 +814,10 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
+  /*
+    中等屏幕断点：适用于平板和较小桌面屏幕。
+    在此宽度下，调整容器最大宽度、显示隐藏类，以及列栅格宽度。
+  */
   .w-container {
     max-width: 728px;
   }
@@ -861,6 +890,10 @@ textarea.w-input, textarea.w-select {
     display: inherit !important;
   }
 
+  /*
+    小屏幕断点：适用于手机竖屏和小平板。
+    在此宽度下，布局改为更适合窄屏幕的显示方式。
+  */
   .w-hidden-small {
     display: none !important;
   }
@@ -926,6 +959,10 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
+  /*
+    超小屏幕断点：适用于小屏手机和窄视口。
+    取消容器最大宽度，并将列宽设为 100%，以便单列显示。
+  */
   .w-container {
     max-width: none;
   }
@@ -991,6 +1028,10 @@ textarea.w-input, textarea.w-select {
   }
 }
 
+/*
+  第三方小部件容器样式。
+  这些规则用于嵌入外部组件，例如地图、Twitter 计数等。
+*/
 .w-widget {
   position: relative;
 }
