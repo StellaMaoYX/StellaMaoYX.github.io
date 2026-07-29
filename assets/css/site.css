@@ -2493,12 +2493,12 @@ figcaption {
 }
 
 .body-copy {
-  margin-bottom: 36px;
+  margin-bottom: 18px;
 }
 
 .body-copy p {
-  margin-top: 28px;
-  margin-bottom: 14px;
+  margin-top: 14px;
+  margin-bottom: 7px;
   overflow: visible;
 }
 
@@ -2719,9 +2719,13 @@ figcaption {
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 20px;
-  line-height: 200%;
+  line-height: 100%;
   display: block;
   overflow: visible;
+}
+
+.div-block .w-col-8 {
+  padding-left: 20px;
 }
 
 .heading-3 {
