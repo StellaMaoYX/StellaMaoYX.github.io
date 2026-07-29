@@ -2731,13 +2731,14 @@ figcaption {
 .heading-3 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .paragraph-2 {
   color: #aaa;
   text-align: justify;
   margin-bottom: 0;
+  font-size: 15px;
   overflow: visible;
 }
 
