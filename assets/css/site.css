@@ -2728,6 +2728,13 @@ figcaption {
   padding-left: 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .div-block .w-row {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .heading-3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -3636,5 +3643,9 @@ figcaption {
 
   .blog-page-image {
     height: 210px;
+  }
+
+  .div-block .w-col-8 {
+    padding-left: 0;
   }
 }
