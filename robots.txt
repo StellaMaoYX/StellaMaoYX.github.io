@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /old-site/
+
+Sitemap: https://stellamaoyx.github.io/sitemap.xml
